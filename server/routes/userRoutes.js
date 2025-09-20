@@ -7,7 +7,7 @@ import { getPublishedImages } from '../controllers/messageController.js'
 const userRouter = express.Router()
 
 
-userRouter.post('/regsiter', registerUser)
+userRouter.post('/register', registerUser)
 userRouter.post('/login', loginUser)
 userRouter.get('/data',protect, getUser)
 userRouter.get('/published-images',  getPublishedImages)

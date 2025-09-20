@@ -7,11 +7,13 @@ import chatRouter from './routes/chatRoutes.js'
 import messageRouter from './routes/messageRoutes.js'
 import creditRouter from './routes/creditRoutes.js'
 import { stripeWebhooks } from './controllers/webhooks.js'
+import dotenv from "dotenv";
 
 
 
 const app = express()
 const PORT = process.env.PORT
+dotenv.config();
 
 
 await connectDB()
